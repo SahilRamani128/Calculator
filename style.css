@@ -1,56 +1,57 @@
-*, 
-*::after, 
-*::before {
+*{
     margin: 0;
     padding: 0;
-}
-html,
-body {
-    height: 100%;
-    color: rgb(58, 1, 1);
-}
-body {
-    background:linear-gradient(orange, white , green);
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
 .container {
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35%;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
 }
-.card-body {
-    background: rgb(46, 63, 221);
-    padding: 10px;
-    border-radius: 10px;
-    border-color: black;
-    border-style: ridge;
-    text-align: center;
+.calculator {
+    border: 1px solid #717377;
+    background: transparent;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 50);
 }
-.card-body h1{
-    margin-bottom: 5px;
-    font-size: 50px ;
-}
-.card-body input{
-    margin-bottom: 10px;
-    font-size: 15px ;
-}
-.card-button button{
-    border-radius: 5px;
-    color: rgb(59, 8, 8);
-    padding: 5px 30px;
-    border: 0;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 0 5px;
+input {
+    width: 300px;
+    border: yellow;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.2);
+    font-size: 40px;
+    text-align: right;
     cursor: pointer;
-    transition: 0.5s;
+    color: #ffffff;
 }
-button#increment {
-    background: rgb(238, 219, 5);
+input::placeholder {
+    color: #ffffff;
 }
-button#reset {
-    background: rgb(238, 219, 8);
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 60%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
 }
-button#decrement {
-    background: rgb(238, 219, 5);
+.equal{
+    background: #fb7c14;
+}
+.operator{
+    color: #6dee0a;
+}
+.action{
+    color: #ff0000;
 }

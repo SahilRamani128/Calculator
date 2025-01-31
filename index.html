@@ -3,21 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class= "container">
-        <div class="card-body">
-            <h1 id="title">0</h1>
-            <input type="number" id="stepValue" value="1">
-            <div class="card-button">
-                <button id="increment">+</button>
-                <button id="reset">Reset</button>
-                <button id="decrement">-</button>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="inputBox"> 
+            <div>
+                <button class="action">AC</button>
+                <button class="action">DEL</button>
+                <button class="operator">%</button>
+                <button class="operator">/</button>
+            </div>
+            <div>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">*</button>
+            </div>
+            <div>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">-</button>
+            </div>
+            <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="operator">+</button>
+            </div>
+            <div>
+                <button>00</button>
+                <button>0</button>
+                <button>.</button>
+                <button class="equal">=</button>
             </div>
         </div>
     </div>
- <script src="scripts.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
